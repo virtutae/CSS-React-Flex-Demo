@@ -1,0 +1,49 @@
+/* -------------------- FLEX CONTAINER STYLES -------------------- */
+/* This section defines your styles for the container of your cards */
+
+.flex-card-container {
+  display: flex; /* set the container to be a flex container */
+  flex-wrap: wrap; /* set the flex container to wrap child elements to a new line when they wont fit on the current line */
+  justify-content: space-around; /* equally distribute the excess space on each row between and around the cards */
+  row-gap: 32px; /* set the gap between each row of the flex container */
+  column-gap: 32px; /* set the gap between each column of the flex container, this effectively acts as a minimum column gap when combined with justify-content */
+}
+
+/* -------------------- FLEX CARD STYLES -------------------- */
+/* This section defines your styles for the cards in your flex container */
+
+.flex-card {
+  border: 2px greenyellow dashed; /* give each card a border of 1px thickness that is black and make the border be a dashed line */
+  border-radius: 8px; /* give each card rounded corners of radius 8px*/
+
+  width: 240px; /* give each card a set width */
+  min-height: 320px; /* give each card a set height */
+
+  display: flex; /* make each card a flex container */
+  flex-direction: column; /* set the direction the flex container will stack elements to be vertical */
+  align-items: flex-start; /* make it so all the elements of the flex container will align to the top of each card */
+}
+
+.card-heading {
+  font-size: 1.5rem; /* set the size of the heading on each card */
+
+  /* set the padding for each card heading */
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+}
+.card-image {
+  width: 100%; /* set the width of the image to 100% of the width of its parent (the card) */
+  height: 160px; /* set the height of the image to 50% of the height of its parent (the card) */
+  object-fit: cover; /* make your image fit within the height and width you have given it, without changing its aspect ratio */
+}
+
+.card-paragraph {
+  /* set the padding for each card paragraph */
+  font-size: 1rem; /* set the size of the text on each card */
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+}

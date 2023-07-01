@@ -1,0 +1,104 @@
+/* -------------------- BASE STYLES -------------------- */
+/* This section defines your base styles for the elements in your app */
+
+html {
+  /* This will set values for everything in your final html document, these will be overwritten by anything more specific */
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; /* set the default fonts of your whole web page, this will try to use the first one, but if it cant it will then use the next one and so on*/
+  background-color: grey; /* set the background colour of your whole web page*/
+
+  /* This line is not explicitly necessary as most browsers will set this themselves, and users may have told their browser what they would like their default size to be so you can exclude this */
+  /* I am leaving it in to demonstrate how changing the font size in the root of the document results in changes for rem units used later on */
+  font-size: 16px;
+  /* rem means the font size of the root element so 4rem is 4x16 as rem=16px which is defined on the line above but it is also defined by the users browser automatically */
+
+  color: white; /* set the font colour for all sub elements on the page to white*/
+}
+
+h1 {
+  /* This section defines your styles for the container of your cards */
+  font-size: 3rem; /* set the size of h1 elements to be 3x the font-size of the html element */
+  font-weight: 900;
+
+  /* set the margins of h1 elements, which defines the space around the element */
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+h2 {
+  font-size: 2rem; /* set the size of h1 elements to be 3x the font-size of the html element */
+
+  /* set the margins of h2 elements, which defines the space around the element */
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+h3 {
+  font-size: 1.5rem; /* set the size of h1 elements to be 3x the font-size of the html element */
+
+  /* set the margins of h3 elements, which defines the space around the element */
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+p {
+  font-size: 1rem; /* set the size of h1 elements to be 3x the font-size of the html element */
+
+  /* set the margins of h4 elements, which defines the space around the element */
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+ol,
+ul {
+  /* set the styles of ordered lists and unordered lists */
+  list-style-type: none; /* removes the numbers from ordered lists, and the bullet points from unordered lists */
+}
+
+li {
+  /* set the styles of list items */
+
+  /* set the margins of li elements, which defines the space around the element */
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+}
+
+/* -------------------- MAIN and section ELEMENT STYLES -------------------- */
+/* This section defines how your main website sections will be displayed on the webpage*/
+
+header {
+  width: 100%; /* set the width of the header element to be 100% of its parent (in this case the div in index.html with id="root" so the width will be the same size as the whole webpage) */
+}
+
+main {
+  width: 100%; /* set the width of the main element to be 100% of its parent (in this case the div in index.html with id="root" so the width will be the same size as the whole webpage) */
+}
+
+section {
+  max-width: 1440px; /* set the maximum width of your section elements to be 1440px, this is a fairly standard size to limit the width of web elements to */
+
+  /* set the section to have equal margins on either side of itself, this effectively squeezes it from both sides and makes it centered */
+  margin-top: 32px;
+  margin-right: auto;
+  margin-bottom: 32px;
+  margin-left: auto;
+
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 16px;
+  padding-left: 0px;
+}
+
+footer {
+  width: 100%; /* set the width of the footer element to be 100% of its parent (in this case the div in index.html with id="root" so the width will be the same size as the whole webpage) */
+}
